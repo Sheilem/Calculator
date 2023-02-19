@@ -1,0 +1,159 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(79, 100%, 49%);
+  --white-color: #fff;
+  --black-color: #000;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 16px;
+  --tiny-font-size: .563rem;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--white-color);
+  }
+
+/* Define styles for the main content container */
+#container {
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+#title{
+    text-align: center;
+}
+
+/* Define styles for the assignment input fields */
+.assignment-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.assignment-input label {
+    width: 10%;
+    font-size: 14px;
+}
+
+.assignment-input input[type="number"] {
+    width: 60%;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.num-ass-wrap{
+    display: flex;
+}
+#num-assignments-label {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#num-assignments {
+    max-width: 50px;
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+.exam-wrap{
+    display: flex;
+}
+#final-score-label{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#final-score
+{
+    max-width: 50px;
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+/* Define styles for the final grade and total assignment weight */
+#result {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#final-grade-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#final-grade {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#total-assignment-weight-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#total-assignment-weight {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Define styles for the calculate button */
+#calculate-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #0077cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.simple-input {
+    display: block;
+    padding: 2px;
+    border: 2px solid #0077cc;
+    border-radius: 10px;
+    color: #333;
+    transition: all 0.3s ease-out;
+    font-size: 16px;
+}
+.simple-input:hover {
+    border-radius: 8px
+}
+.simple-input:focus {
+    outline: none;
+    border-radius: 8px;
+    border-color: #0077cc7c;
+}
+
+.expandable{
+    margin-left: 10px;
+    width: 40%;
+}
+
+input {
+    font-size: 16px !important;
+}

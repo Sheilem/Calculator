@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="grade-calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="grade-calculator.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="title"><h1>Open University Grade Calculator</h1></div>
+
+        <div class="num-ass-wrap">
+        <div id="num-assignments-label">Number of Assignments:</div>
+        <input  enterkeyhint="next"	 type="number" pattern="[0-9]*" id="num-assignments" class="simple-input" value="" min="0" max="20" oninput="generateAssignmentFields()">
+    </div>
+
+        <div id="assignment-fields"></div>
+
+        <div class="exam-wrap">
+            <div id="final-score-label">Exam Score:</div>
+            <input type="number" enterkeyhint="done" pattern="[0-9]*" class="simple-input" id="final-score" max="100">
+        </div>
+
+
+        <button type="button" id="calculate-button" onclick="calculateGrade()">Calculate Grade</button>
+
+        <div id="result">
+            <div id="final-grade-label">Final Grade:</div>
+            <div id="final-grade"></div>
+            <div id="total-assignment-weight-label">Total Assignment Weight:</div>
+            <div id="total-assignment-weight"></div>
+        </div>
+    </div>
+</body>
+
+</html>
